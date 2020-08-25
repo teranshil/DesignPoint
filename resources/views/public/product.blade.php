@@ -4,7 +4,6 @@
 @endsection
 
 @section('content')
-
     <div class="product-page-container column">
         <div class="product-table-container">
             <div class="row heading-container">
@@ -46,7 +45,6 @@
                 <textarea data-product cols="30" rows="5"></textarea>
                 <button type='submit' class="common-btn save-btn">Save</button>
             </div>
-
         </div>
     </div>
 @endsection

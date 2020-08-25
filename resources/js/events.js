@@ -118,6 +118,7 @@ function repopulateProducts(products) {
         homeContainer.prepend(constructProductCart(product));
     });
 }
+
 function constructProductCart(product) {
     return `<div class="product-cart-container column">` +
                 `<div class="product-image">` +
