@@ -1,0 +1,53 @@
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+h1, h2, h3, h4 { margin: 0; }
+body { position: relative; }
+ul { list-style: none; margin: 0; padding: 0; }
+a { text-decoration: none; }
+input:focus{
+    outline: 0 transparent !important;
+}
+.row {
+    display: flex;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+// color variables
+:root {
+    --component-color: #008b8b;
+    --success-color: #35b784;
+    --primary-color: #0080ff;
+    --dander-color: #ea4e45;
+        //#42d6f3;
+}
+
+.common-btn {
+    font-weight: 700;
+    background-color: white;
+    transition: transform .1s ease-in-out;
+    transform-origin: center;
+    border-radius: 10px;
+    border-width: 1px;
+    //text-transform: uppercase;
+    border-style: solid;
+
+    &:hover {
+        cursor: pointer;
+    }
+    &:active {
+        transform: scale(1.05);
+    }
+}

@@ -1,0 +1,130 @@
+.product-page-container {
+    align-items : center;
+    width: 100%;
+    height: 100%;
+}
+.heading-container {
+    align-items: center;
+    margin: 1rem 0 .5rem 0;
+    & .heading {
+        margin: 0 auto;
+    }
+
+    & .create-btn {
+        padding: .3rem .9rem;
+        color: var(--success-color);
+        border-color: var(--success-color);
+        font-size: 1rem;
+
+        &:active {
+            color: white;
+            background-color: var(--success-color);
+        }
+    }
+}
+//TABLE
+.product-table {
+    & .table-head {
+        font-family: "Helvetica Neue", Helvetica, Arial;
+        font-weight: 900;
+        color: white;
+        background-color: #2980b9;
+    }
+}
+.cell {
+    padding: .7rem .2rem;
+    text-align: center;
+}
+.cell-btn {
+    padding: .7rem .7rem;
+
+    .edit-btn {
+        padding: .2rem .4rem;
+        margin-left: 2%;
+        color: var(--primary-color);
+        border-color:var(--primary-color);
+
+        &:active {
+            color: white;
+            background-color: var(--primary-color);
+        }
+    }
+    .delete-btn {
+        padding: .2rem .4rem;
+        margin-left: 2%;
+        color: var(--dander-color);
+        border-color:var(--dander-color);
+
+        &:active {
+            color: white;
+            background-color: var(--dander-color);
+        }
+    }
+}
+
+.table-row:nth-of-type(odd) {
+    background-color: #e9e9e9;
+}
+.table-row:nth-of-type(even) {
+    background-color: #f6f6f6;
+}
+.table-row:hover {
+    background-color: #cccccc;
+}
+
+.modal-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    z-index: 100;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+
+    & .modal-container {
+        position: relative;
+        width: 20%;
+        height: 30%;
+        margin: 15% auto 0 auto;
+        padding: 1.5rem .7rem 1.5rem .5rem;
+        background-color: #f6f6f6;
+        border: 1px solid #e9e9e9;
+
+        & .close-btn {
+            width: max-content;
+            position: absolute;
+            top: 1%;
+            left: 2%;
+            transform-origin: 50% 50%;
+            transition: transform .4s ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+                transform: rotate(90deg);
+            }
+        }
+
+        & .save-btn {
+            width: 50%;
+            padding: .3rem .9rem;
+            margin: 2% auto 0 auto;
+            color: var(--success-color);
+            border-color: var(--success-color);
+            font-size: 1rem;
+
+            &:active {
+                color: white;
+                background-color: var(--success-color);
+            }
+        }
+
+        input[data-product] {
+            padding: .2rem 0 .2rem .3rem;
+            background-color: white;
+            margin-bottom: 2%;
+            border: 0;
+        }
+    }
+}

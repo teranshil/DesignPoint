@@ -1,0 +1,125 @@
+.navigation {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 0.8rem;
+  background-color: darkcyan;
+}
+
+.menu-container {
+  display: none;
+}
+
+.menu-container .menu-item + .menu-item {
+  margin-left: 1rem;
+}
+
+.menu-container .menu-item a {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.menu-container .menu-item a:hover::before {
+  transform: scale(1, 1);
+}
+
+.menu-container .menu-item a::before {
+  content: "";
+  position: absolute;
+  top: 102%;
+  left: 0;
+  width: 105%;
+  height: 0.15rem;
+  transform: scale(0, 1);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+  background-color: white;
+  z-index: 200;
+}
+
+.user-icon {
+  font-size: 1.2rem !important;
+  transform: translateY(50%);
+  color: white;
+}
+
+.user-icon :hover {
+  cursor: pointer;
+}
+
+.drop-down-container {
+  position: absolute;
+  top: 105%;
+  left: 100%;
+  transform: translateX(-120%) scale(1, 0);
+  transform-origin: top;
+  transition: transform 0.4s ease-in-out;
+  background-color: darkcyan;
+  padding: 1.5rem 1rem;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.drop-down-container .drop-down {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.drop-down-container .drop-down .drop-down-element {
+  opacity: 0;
+  transition: opacity 0.4s ease-in 0.25s;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.drop-down-container .drop-down .drop-down-element:hover {
+  cursor: pointer;
+  color: #004d4d;
+}
+
+.drop-down-container .drop-down .drop-down-element:active {
+  transform: scale(1.05);
+}
+
+.drop-down-container .drop-down .drop-down-element + .drop-down-element {
+  margin-top: 0.1rem;
+}
+
+.scale-drop-down {
+  transform: translateX(-120%) scale(1);
+}
+
+.max-opacity {
+  opacity: 1 !important;
+}
+
+.icon-bars {
+  font-size: 1.8rem;
+}
+
+@media (min-width: 600px) {
+  .navigation {
+    padding: 0.9rem 1.1rem;
+  }
+
+  .menu-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon-bars {
+    display: none;
+  }
+}
+

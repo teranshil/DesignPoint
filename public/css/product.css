@@ -1,0 +1,138 @@
+.product-page-container {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.heading-container {
+  align-items: center;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.heading-container .heading {
+  margin: 0 auto;
+}
+
+.heading-container .create-btn {
+  padding: 0.3rem 0.9rem;
+  color: var(--success-color);
+  border-color: var(--success-color);
+  font-size: 1rem;
+}
+
+.heading-container .create-btn:active {
+  color: white;
+  background-color: var(--success-color);
+}
+
+.product-table .table-head {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-weight: 900;
+  color: white;
+  background-color: #2980b9;
+}
+
+.cell {
+  padding: 0.7rem 0.2rem;
+  text-align: center;
+}
+
+.cell-btn {
+  padding: 0.7rem 0.7rem;
+}
+
+.cell-btn .edit-btn {
+  padding: 0.2rem 0.4rem;
+  margin-left: 2%;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.cell-btn .edit-btn:active {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.cell-btn .delete-btn {
+  padding: 0.2rem 0.4rem;
+  margin-left: 2%;
+  color: var(--dander-color);
+  border-color: var(--dander-color);
+}
+
+.cell-btn .delete-btn:active {
+  color: white;
+  background-color: var(--dander-color);
+}
+
+.table-row:nth-of-type(odd) {
+  background-color: #e9e9e9;
+}
+
+.table-row:nth-of-type(even) {
+  background-color: #f6f6f6;
+}
+
+.table-row:hover {
+  background-color: #cccccc;
+}
+
+.modal-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  z-index: 100;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-wrapper .modal-container {
+  position: relative;
+  width: 20%;
+  height: 30%;
+  margin: 15% auto 0 auto;
+  padding: 1.5rem 0.7rem 1.5rem 0.5rem;
+  background-color: #f6f6f6;
+  border: 1px solid #e9e9e9;
+}
+
+.modal-wrapper .modal-container .close-btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  top: 1%;
+  left: 2%;
+  transform-origin: 50% 50%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.modal-wrapper .modal-container .close-btn:hover {
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+.modal-wrapper .modal-container .save-btn {
+  width: 50%;
+  padding: 0.3rem 0.9rem;
+  margin: 2% auto 0 auto;
+  color: var(--success-color);
+  border-color: var(--success-color);
+  font-size: 1rem;
+}
+
+.modal-wrapper .modal-container .save-btn:active {
+  color: white;
+  background-color: var(--success-color);
+}
+
+.modal-wrapper .modal-container input[data-product] {
+  padding: 0.2rem 0 0.2rem 0.3rem;
+  background-color: white;
+  margin-bottom: 2%;
+  border: 0;
+}
+
